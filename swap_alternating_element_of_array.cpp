@@ -3,10 +3,20 @@ using namespace std;
 
     void revese(int arr[], int size)
     {
+        int temp=0;
         for(int i=0; i<=size; i+=2)
         {
             if(i+1 < size)
             swap(arr[i],arr[i + 1]);
+            
+            /* 
+            without swap function
+            
+            temp = arr[i];
+            arr[i] = arr[i + 1];
+            arr[i + 1] = temp;
+            */
+            
         }
     }
 
